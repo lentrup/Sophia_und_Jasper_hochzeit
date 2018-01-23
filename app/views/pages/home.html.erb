@@ -1,2 +1,16 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
+
+<div class="container">
+  <div class="row">
+    <% @guests.each do |guest| %>
+      <div class="col-xs-12 col-sm-4">
+        <h1><%=@guest.name%></h1>
+        <p><%=@guest.email  %></p>
+        <p><%=@guest.excuse  %></p>
+        <p><%=@guest.adult  %></p>
+        <p><%=@guest.child  %></p>
+      </div>
+    <% end %>
+  </div>
+</div>
