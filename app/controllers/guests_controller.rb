@@ -14,6 +14,7 @@ class GuestsController < ApplicationController
 
   def create
     @guest = Guest.create(guest_params)
+    @guest.save
     redirect_to guest_path(@guest)
   end
 
