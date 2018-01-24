@@ -10,10 +10,19 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
-    <div class="container global-background">
-    <%= yield %>
-    <%= javascript_include_tag 'application' %>
-    <%= javascript_pack_tag 'application' %>
+    <div class="global-background">
+      <div class="bg-image"></div>
+      <div class="s-und-j-pic"></div>
+      <div class="main-content">
+        <div class="container">
+
+
+          <%= yield %>
+          <%= javascript_include_tag 'application' %>
+          <%= javascript_pack_tag 'application' %>
+
+        </div>
+      </div>
     </div>
   </body>
 </html>
