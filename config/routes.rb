@@ -1,18 +1,20 @@
 Rails.application.routes.draw do
 resources :guests
-root to: 'pages#RSVP'
+root to: 'pages#zu_und_absagen'
 
-get 'rsvp', to: 'pages#RSVP'
+get 'zu_und_absagen', to: 'pages#zu_und_absagen'
 
-get 'hochzeit', to: 'pages#Hochzeit'
+get 'ablauf', to: 'pages#ablauf'
 
-get 'wildland', to: 'pages#Wildland'
+get 'dresscode', to: 'pages#dresscode'
 
-get 'gruppenflittern', to: 'pages#Gruppenflittern'
+get 'unterkunft', to: 'pages#unterkunft'
 
-get 'geschenke', to: 'pages#Geschenke'
+get 'gruppenflittern', to: 'pages#gruppenflittern'
 
-get 'kontakt', to: 'pages#Kontakt'
+get 'geschenke', to: 'pages#geschenke'
+
+get 'kontakt', to: 'pages#kontakt'
 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
