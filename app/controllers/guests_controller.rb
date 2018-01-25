@@ -5,9 +5,6 @@ class GuestsController < ApplicationController
     @guests = Guest.all
   end
 
-  def show
-  end
-
   def new
     @guest = Guest.new
   end
@@ -16,9 +13,6 @@ class GuestsController < ApplicationController
     @guest = Guest.create(guest_params)
     @guest.save
     redirect_to guest_path(@guest)
-  end
-
-  def edit
   end
 
   def update

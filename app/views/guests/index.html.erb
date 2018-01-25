@@ -1,0 +1,12 @@
+  <div class="row">
+      <% @guests.each do |guest| %>
+        <div class="col-xs-12 col-sm-4">
+          <h1><%=guest.name  %></h1>
+          <p><%=guest.email  %></p>
+          <p><%=guest.excuse  %></p>
+          <p><%=guest.adult  %></p>
+          <p><%=guest.child  %></p>
+        </div>
+      <% end %>
+    </div>
+

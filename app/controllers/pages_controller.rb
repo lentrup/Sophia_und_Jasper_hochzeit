@@ -1,19 +1,7 @@
 class PagesController < ApplicationController
-  def RSVP
+  def zu_und_absagen
+    @guests = Guest.all
   end
 
-  def Hochzeit
-  end
 
-  def Wildland
-  end
-
-  def Gruppenflittern
-  end
-
-  def Geschenke
-  end
-
-  def Kontakt
-  end
 end
