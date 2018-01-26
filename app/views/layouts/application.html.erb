@@ -10,21 +10,21 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
-    <div class="">
-      <div class="bg-image"></div>
+    <div class="bg-image"></div>
+    <div class="s-und-j-pic-center">
       <div class="s-und-j-pic"></div>
-      <div class="main-content">
-        <div class="container">
-          <%= render 'pages/navbar' %>
-          <div class="row">
-            <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-             <%= yield %>
-             <%= javascript_include_tag 'application' %>
-             <%= javascript_pack_tag 'application' %>
-           </div>
+    </div>
+    <div class="main-content">
+      <div class="container">
+        <%= render 'pages/navbar' %>
+        <div class="row">
+          <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+           <%= yield %>
+           <%= javascript_include_tag 'application' %>
+           <%= javascript_pack_tag 'application' %>
          </div>
        </div>
      </div>
    </div>
-  </body>
+ </body>
 </html>

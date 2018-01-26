@@ -1,18 +1,34 @@
 .menu {
+  a {
+    letter-spacing: 0.10em;
+    color: white;
+
+
+  }
+
+
   li {
     list-style-type: none;
   }
-  a {
+
+  h2:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease;
     text-decoration: none;
+
   }
+
   h2 {
     font-size: 1em;
+    color: white;
   }
   ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0;
   }
+  border-bottom: 1px solid #b1b2b433;
 }
 
 
