@@ -10,9 +10,8 @@ class GuestsController < ApplicationController
   end
 
   def create
-    @guest = Guest.create(guest_params)
-    @guest.save
-    redirect_to guest_path(@guest)
+    Guest.create(guest_params)
+    redirect_to root_path
   end
 
   def update
@@ -32,6 +31,6 @@ class GuestsController < ApplicationController
   end
 
   def guest_params
-    params.require(:guest).permit(:name, :email, :coming, :excuse, :adult, :child)
+    params.require(:guest).permit(:name, :email, :coming, :excuse, :adult, :child, :hotel)
   end
 end

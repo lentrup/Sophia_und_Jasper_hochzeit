@@ -1,1 +1,21 @@
-new.html.erb
+<div class="form-group">
+  <%= simple_form_for @guest do |form| %>
+    <%= form.input :name, as: :text, placeholder: 'Name', class: "form-black" %>
+    <%= form.input :email, required: true, as: :text, placeholder: 'Email', class: "form-control form-black", type: "email"  %>
+    <%= form.input :excuse, required: true, as: :text, placeholder: 'Was ist eure Ausrede?', class: "form-control"  %>
+    <%= form.input :coming, required: true, as: :boolean, checked_value: true, unchecked_value: false, inline_label: 'Kommt ihr zur Hochzeit?'  %>
+    <%= form.input :adult, required: true, as: :integer, placeholder: 'Wie viele Erwachsene kommen?' %>
+    <%= form.input :hotel, required: true, as: :boolean, checked_value: true, unchecked_value: false, inline_label: 'Wollt ihr im Hotel Wildland schlafen?'  %>
+    <%= form.input :child, required: true, as: :integer, placeholder: 'Wie viele Kinder kommen?' %>
+    <%= form.button :submit, "Senden", class: "btn-lg btn-primary" %>
+  <% end %>
+</div>
+
+
+
+<div class="form-group row">
+  <label for="example-text-input" class="col-2 col-form-label">Text</label>
+  <div class="col-10">
+    <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
+  </div>
+</div>

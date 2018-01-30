@@ -76,6 +76,8 @@ GEM
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
+    lockup (1.4)
+      rails (>= 3, < 6)
     loofah (2.1.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -191,6 +193,7 @@ DEPENDENCIES
   font-awesome-sass
   jbuilder (~> 2.0)
   listen (~> 3.0.5)
+  lockup
   pg (~> 0.21)
   pry-byebug
   pry-rails

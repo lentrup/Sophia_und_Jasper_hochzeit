@@ -1,9 +1,11 @@
+require 'lockup'
 Rails.application.routes.draw do
+mount Lockup::Engine, at: '/lockup-1.4'
 resources :guests
 
-root to: 'pages#zu_und_absagen'
+root to: 'guests#new'
 
-get 'zu_und_absagen', to: 'guests#index'
+get 'zu_und_absagen', to: 'guests#new'
 
 get 'pages#zu_und_absagen', to: 'guests#index'
 
