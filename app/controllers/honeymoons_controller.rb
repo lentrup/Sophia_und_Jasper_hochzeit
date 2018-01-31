@@ -1,4 +1,5 @@
 class HoneymoonsController < ApplicationController
+  before_action :check_for_lockup
   before_action :set_honeymoon, only: [:show, :edit, :update, :destroy]
 
   def index

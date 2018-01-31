@@ -1,6 +1,9 @@
 Rails.application.configure do
    config.webpacker.check_yarn_integrity = false  # Settings specified here will take precedence over those in config/application.rb.
 
+
+  ENV["LOCKUP_CODEWORD"] = '111105'
+  ENV["LOCKUP_HINT"] = 'Bitte gib hier das Passwort auf der Einladung ein.'
   # Code is not reloaded between requests.
   config.cache_classes = true
 

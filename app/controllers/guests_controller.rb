@@ -1,4 +1,6 @@
 class GuestsController < ApplicationController
+    before_action :check_for_lockup
+
   before_action :set_guest, only: [:show, :edit, :update, :destroy]
 
   def index

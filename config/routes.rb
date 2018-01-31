@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 mount Lockup::Engine, at: '/lockup'
-resources :guests
+resources :guests, except: [:new]
 resources :honeymoons
 
 root to: 'guests#new'

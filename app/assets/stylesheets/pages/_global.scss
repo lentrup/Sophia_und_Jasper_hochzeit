@@ -5,9 +5,13 @@ a:hover {
   letter-spacing: 0.01em;
   line-height: 2em;
   overflow: hidden;
+}
 
-.form-control::input {
-  color: black;
+
+#new_guest {
+  input {
+    color: black;
+  }
 }
 
 
@@ -17,7 +21,6 @@ a:hover {
   padding-bottom: 30px;
 }
 
-}
 
 .bg-image {
   background-image: image-url('2008-blattskelett-1_small-v1.png');

@@ -1,6 +1,14 @@
 Rails.application.configure do
     config.webpacker.check_yarn_integrity = true  # Settings specified here will take precedence over those in config/application.rb.
 
+
+  ENV["LOCKUP_CODEWORD"] = '111105'
+  ENV["LOCKUP_HINT"] = 'Bitte gib hier das Passwort auf der Einladung ein.'
+
+
+
+
+
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
