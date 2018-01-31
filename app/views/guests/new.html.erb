@@ -1,21 +1,16 @@
-<div class="form-group">
+<div class="form-group" style="padding-top: 30px;padding-bottom: 30px;">
   <%= simple_form_for @guest do |form| %>
-    <%= form.input :name, as: :text, placeholder: 'Name', class: "form-black" %>
-    <%= form.input :email, required: true, as: :text, placeholder: 'Email', class: "form-control form-black", type: "email"  %>
-    <%= form.input :excuse, required: true, as: :text, placeholder: 'Was ist eure Ausrede?', class: "form-control"  %>
+    <%= form.input :name, as: :string, placeholder: 'Name', class: "form-black" %>
+    <div id="form-black"><%= form.input :email, required: true, as: :email, placeholder: "Email", style: "color: black;", type: "email"  %></div>
+    <%= form.input :excuse, label: "Kommentar", required: true, as: :text, placeholder: 'Gibt es noch etwas was ihr uns mitteilen wollt? Was ist eure Ausrede falls ihr nicht kommt?', class: "form-control"  %>
+    <%= form.input :adult, required: true, as: :integer, placeholder: 'Wie viele Erwachsene kommen? Zum Beispiel: 2'%>
+    <%= form.input :child, required: true, as: :integer, placeholder: 'Wie viele Kinder kommen? Zum Beispiel: 3' %>
     <%= form.input :coming, required: true, as: :boolean, checked_value: true, unchecked_value: false, inline_label: 'Kommt ihr zur Hochzeit?'  %>
-    <%= form.input :adult, required: true, as: :integer, placeholder: 'Wie viele Erwachsene kommen?' %>
     <%= form.input :hotel, required: true, as: :boolean, checked_value: true, unchecked_value: false, inline_label: 'Wollt ihr im Hotel Wildland schlafen?'  %>
-    <%= form.input :child, required: true, as: :integer, placeholder: 'Wie viele Kinder kommen?' %>
     <%= form.button :submit, "Senden", class: "btn-lg btn-primary" %>
   <% end %>
 </div>
 
 
 
-<div class="form-group row">
-  <label for="example-text-input" class="col-2 col-form-label">Text</label>
-  <div class="col-10">
-    <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-  </div>
-</div>
+

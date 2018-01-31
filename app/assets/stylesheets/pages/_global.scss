@@ -6,10 +6,16 @@ a:hover {
   line-height: 2em;
   overflow: hidden;
 
-.form-black {
+.form-control::input {
   color: black;
 }
 
+
+
+.gruppenpadding {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 }
 

@@ -1,0 +1,14 @@
+  <div class="row">
+      <% @honeymoons.each do |honeymoon| %>
+        <div class="col-xs-12 col-sm-4">
+          <p>Name: <%=honeymoon.name  %></p>
+          <p>Email: <%=honeymoon.email  %></p>
+          <p>Kommen: <%= honeymoon.coming %></p>
+          <p>Kommentar: <%=honeymoon.comment  %></p>
+          <p>Bus gewünscht: <%=honeymoon.caravan  %></p>
+          <p>Zelt gewünscht: <%=honeymoon.tent  %></p>
+          <p>Eigener Bus: <%= honeymoon.ownbus %></p>
+        </div>
+      <% end %>
+    </div>
+

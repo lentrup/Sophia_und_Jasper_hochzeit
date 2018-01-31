@@ -1,7 +1,7 @@
-require 'lockup'
 Rails.application.routes.draw do
-mount Lockup::Engine, at: '/lockup-1.4'
+mount Lockup::Engine, at: '/lockup'
 resources :guests
+resources :honeymoons
 
 root to: 'guests#new'
 
@@ -15,7 +15,7 @@ get 'dresscode', to: 'pages#dresscode'
 
 get 'unterkunft', to: 'pages#unterkunft'
 
-get 'gruppenflittern', to: 'pages#gruppenflittern'
+get 'gruppenflittern', to: 'honeymoons#new'
 
 get 'geschenke', to: 'pages#geschenke'
 
