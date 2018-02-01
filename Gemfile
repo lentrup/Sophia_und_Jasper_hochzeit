@@ -10,12 +10,14 @@ gem 'figaro'
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
-gem 'font-awesome-sass'
 gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 gem 'lockup'
+gem 'jquery-rails'
+
+
 
 group :development do
   gem 'web-console', '>= 3.3.0'

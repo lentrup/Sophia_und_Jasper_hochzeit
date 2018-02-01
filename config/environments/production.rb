@@ -3,7 +3,7 @@ Rails.application.configure do
 
 
   ENV["LOCKUP_CODEWORD"] = '111105'
-  ENV["LOCKUP_HINT"] = 'Bitte gib hier das Passwort auf der Einladung ein.'
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
