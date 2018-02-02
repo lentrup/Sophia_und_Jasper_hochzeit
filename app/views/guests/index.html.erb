@@ -1,13 +1,37 @@
-  <div class="row">
-      <% @guests.each do |guest| %>
-        <div class="col-xs-12 col-sm-4">
-          <p>Name: <%=guest.name  %></p>
-          <p>Email: <%=guest.email  %></p>
-          <p>Kommen: <%= guest.coming %></p>
-          <p>Kommentar: <%=guest.excuse  %></p>
-          <p>Erwachsene: <%=guest.adult  %></p>
-          <p>Kinder: <%=guest.child  %></p>
-        </div>
-      <% end %>
-    </div>
+<% @guests.each do |guest| %>
+
+<div class="guest">
+  <div class="beschreibung">
+      <div class="kommen">
+        <span id="orange">Kommen?  </span><span><%= guest.coming %></span>
+      </div>
+      <div class="name">
+        <span id="orange">Name:  </span><span><%=guest.name  %></span>
+      </div>
+      <div class="email">
+        <span id="orange">Email:  </span><span><%=guest.email  %></span>
+      </div>
+      <div class="erwachsene">
+        <span id="orange">Erwachsene:  </span><span><%=guest.adult  %></span>
+      </div>
+      <div class="kinder">
+        <span id="orange">Kinder:  </span><span><%=guest.child  %></span>
+      </div>
+      <div class="hotel">
+        <span id="orange">Zimmer Hotel Wildland:  </span><span><%=guest.hotel  %></span>
+      </div>
+      <div class="kommentar">
+        <span id="orange">Kommentar:  </span><span><%=guest.excuse  %></span>
+      </div>
+  </div>
+
+  <div class="guest-actions">
+
+  </div>
+
+
+</div>
+
+<% end %>
+
 
