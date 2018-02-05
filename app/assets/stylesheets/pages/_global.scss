@@ -82,7 +82,11 @@ font-size: 30px;
 
 }
 
-
+@media only screen and (min-width: 501px) and (max-width: 1022px) {
+  .menu-big ul {
+    font-size: 14px;
+  }
+}
 
 @media only screen and (max-width: 500px) {
     .main-content {
