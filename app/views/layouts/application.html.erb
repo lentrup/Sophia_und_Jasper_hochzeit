@@ -31,12 +31,9 @@
       <div class="container white-font">
         <%= render 'pages/navbar' %>
         <div class="row">
-          <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-           <%= yield %>
-           <%= javascript_include_tag 'application' %>
-           <%= javascript_pack_tag 'application' %>
-
-         </div>
+         <%= yield %>
+         <%= javascript_include_tag 'application' %>
+         <%= javascript_pack_tag 'application' %>
        </div>
      </div>
    </div>

@@ -3,7 +3,7 @@ mount Lockup::Engine, at: '/lockup'
 resources :guests, except: [:new]
 resources :honeymoons
 
-root to: 'guests#new'
+root to: 'pages#home'
 
 get 'zu_und_absagen', to: 'guests#new'
 
