@@ -7,10 +7,11 @@ a:hover {
   overflow: hidden;
 h1 {
     font-weight: 400;
+    margin-bottom: 24px;
   }
 }
 .white-font {
-  color: white;
+  color: RGB(255, 254, 243);
 }
 
 .ablauf {
@@ -122,5 +123,9 @@ h1 {
     .dresscode-foto {
       width: 380px;
       height: 260px;
+    }
+    .home {
+      width: 100%;
+      height: 100%;
     }
 }
