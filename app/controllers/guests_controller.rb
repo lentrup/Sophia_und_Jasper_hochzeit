@@ -7,6 +7,7 @@ class GuestsController < ApplicationController
     @guests = Guest.all
   end
 
+
   def new
     @guest = Guest.new
   end
@@ -18,7 +19,13 @@ class GuestsController < ApplicationController
 
   def update
     @guest.update(guest_params)
-    redirect_to guest_path(@guest)
+    @guest.save
+    if @guest.save
+      redirect_to guests_path, notice: "successfully updated."
+    else
+      render :new, alert: "Error beim Vorgang"
+    end
+
   end
 
   def destroy

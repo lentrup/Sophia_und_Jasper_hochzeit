@@ -27,7 +27,10 @@
     </div>
 
     <div class="guest-actions">
-
+      <%= link_to "Ändern", edit_guest_path(guest), class:"guest-edit" %>
+      <%= link_to "Löschen", guest_path(guest), class:"guest-delete",
+      method: :delete,
+      data: { confirm: "Bist du sicher?" } %>
     </div>
 
 

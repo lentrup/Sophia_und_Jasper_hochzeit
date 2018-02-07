@@ -7,8 +7,8 @@
       <%= form.input :excuse, label: "Kommentar", required: true, as: :text, placeholder: 'Gibt es noch etwas was ihr uns mitteilen wollt? Was ist eure Ausrede falls ihr nicht kommt?', class: "form-control"  %>
       <%= form.input :adult, label: "Erwachsene", required: true, as: :integer, placeholder: 'Wie viele Erwachsene kommen? Zum Beispiel: 2'%>
       <%= form.input :child, label: "Kinder", required: true, as: :integer, placeholder: 'Wie viele Kinder kommen? Zum Beispiel: 3' %>
-      <%= form.input :coming, required: true, as: :boolean, checked_value: true, unchecked_value: false, inline_label: 'Kommt ihr zur Hochzeit?'  %>
-      <%= form.input :hotel, required: true, as: :boolean, checked_value: true, unchecked_value: false, inline_label: 'Wollt ihr im Hotel Wildland schlafen?'  %>
+      <%= form.input :coming, as: :boolean, checked_value: true, undchecked_value: false, inline_label: 'Kommt ihr zur Hochzeit? Zum Beispiel:  ✓=Ja ⎕=Nein' %>
+      <%= form.input :hotel, as: :boolean, checked_value: true, unchecked_value: false, inline_label: 'Wir wollen im Hotel Wildland schlafen'  %>
       <%= form.button :submit, "Senden", class: "btn-lg btn-primary" %>
     <% end %>
   </div>

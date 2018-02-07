@@ -32,7 +32,11 @@
 .guest-actions {
   border-left: 1px solid #b1b2b41a;
   height: 100%;
-  width: 15%
+  width: 15%;
+  display: inline-grid;
+  justify-content: center;
+  align-items: center;
+
 
 
 }
