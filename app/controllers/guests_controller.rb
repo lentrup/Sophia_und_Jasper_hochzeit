@@ -13,7 +13,7 @@ class GuestsController < ApplicationController
 
   def create
     Guest.create(guest_params)
-    redirect_to root_path
+    redirect_to erfolg_path
   end
 
   def update

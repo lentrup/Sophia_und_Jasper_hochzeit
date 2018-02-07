@@ -11,6 +11,8 @@ get 'pages#zu_und_absagen', to: 'guests#index'
 
 get 'ablauf', to: 'pages#ablauf'
 
+get 'erfolg', to: 'pages#success'
+
 get 'dresscode', to: 'pages#dresscode'
 
 get 'unterkunft', to: 'pages#unterkunft'
