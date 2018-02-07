@@ -13,11 +13,11 @@
       <%= form.input :name, as: :string, placeholder: 'Name', class: "form-black" %>
       <%= form.input :email, required: true, as: :email, placeholder: 'Email', class: "form-control form-black", type: "email"  %>
       <%= form.input :comment, label: "Kommentar", as: :text, placeholder: 'Gibt es noch etwas was ihr uns mitteilen wollt? Was ist eure Ausrede falls ihr nicht kommt?', class: "form-control"  %>
-      <%= form.input :additional, label: "Personen", required: true, as: :integer, placeholder: 'Wie viele Personen kommen?' %>
-      <%= form.input :coming, required: true, as: :boolean, checked_value: true, unchecked_value: false, inline_label: 'Kommt ihr zum Gruppenflittern?'  %>
-      <%= form.input :caravan, as: :boolean, checked_value: true, unchecked_value: false, inline_label: 'Wir brauchen einen Wohnwagen'  %>
-      <%= form.input :tent, as: :boolean, checked_value: true, unchecked_value: false, inline_label: 'Wir brauchen einen Zeltplatz'  %>
-       <%= form.input :ownbus, as: :boolean, checked_value: true, unchecked_value: false, inline_label: 'Wir schlafen im eigenen Bus / Wohnwagen'  %>
+      <%= form.input :additional, label: "Personen", required: true, as: :integer, placeholder: 'Wie viele Personen kommen? Zum Beispiel: 3' %>
+      <%= form.input :coming, required: true, as: :boolean, checked_value: true, unchecked_value: false, inline_label: 'Kommt ihr zum Gruppenflittern? ✓=Ja ⎕=Nein'  %>
+      <%= form.input :caravan, as: :boolean, checked_value: true, unchecked_value: false, inline_label: 'Wir brauchen einen Wohnwagen ✓=Ja ⎕=Nein'  %>
+      <%= form.input :tent, as: :boolean, checked_value: true, unchecked_value: false, inline_label: 'Wir brauchen einen Zeltplatz ✓=Ja ⎕=Nein'  %>
+       <%= form.input :ownbus, as: :boolean, checked_value: true, unchecked_value: false, inline_label: 'Wir schlafen im eigenen Bus / Wohnwagen ✓=Ja ⎕=Nein'  %>
       <%= form.button :submit, "Senden", class: "btn-lg btn-primary" %>
     <% end %>
   </div>

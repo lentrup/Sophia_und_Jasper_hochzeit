@@ -12,12 +12,12 @@ class HoneymoonsController < ApplicationController
 
   def create
     Honeymoon.create(honeymoon_params)
-    redirect_to root_path
+    redirect_to erfolg_path
   end
 
   def update
     @honeymoon.update(honeymoon_params)
-    redirect_to honeymoon_path(@honeymoon)
+    redirect_to honeymoons_path
   end
 
   def destroy
