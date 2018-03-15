@@ -4,6 +4,12 @@ class HoneymoonsController < ApplicationController
 
   def index
     @honeymoons= Honeymoon.all
+    @zusagen = Honeymoon.where(coming: true).count
+    @absagen = Honeymoon.where(coming: false).count
+    # @personen = Honeymoon.sum(:additional)
+    @caravan = Honeymoon.where(caravan: true).count
+    @tent = Honeymoon.where(tent: true).count
+    @ownbus = Honeymoon.where(ownbus: true).count
   end
 
   def new

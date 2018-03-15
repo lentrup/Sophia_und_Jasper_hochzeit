@@ -17,7 +17,22 @@ puts 'Creating Guests...'
     coming: [true, false].sample,
     excuse: Faker::Lorem.sentences(1),
     adult: Faker::Number.between(1, 5),
-    child: Faker::Number.between(1, 5)
+    child: Faker::Number.between(1, 5),
+    hotel: [true, false].sample
+  )
+end
+
+puts 'Creating Honeymoon Guests...'
+
+6.times do
+  Honeymoon.create!(
+    name: Faker::Company.name,
+    email: Faker::Internet.email,
+    coming: [true, false].sample,
+    comment: Faker::Lorem.sentences(1),
+    additional: Faker::Number.between(1, 5),
+    tent: [true, false].sample,
+    ownbus: [true, false].sample
   )
 end
 

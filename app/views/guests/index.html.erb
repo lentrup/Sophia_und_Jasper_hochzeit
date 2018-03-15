@@ -1,29 +1,55 @@
 <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+  <div class="overview">
+    <h1 class="text-center">Übersicht Gäste</h1>
+    <div class="overview-center">
+      <div class="text-center">
+        <p>Zusagen:</p>
+        <h1><%= @zusagen  %></h1>
+      </div>
+      <div class="text-center">
+        <p>Absagen:</p>
+        <h1> <%= @absagen %> </h1>
+      </div>
+      <div class="text-center">
+        <p>Erwachsene:</p>
+        <h1> <%= @adults %></h1>
+      </div>
+      <div class="text-center">
+        <p>Kinder:</p>
+        <h1> <%= @children %></h1>
+      </div>
+      <div class="text-center">
+        <p>Hotelzimmer:</p>
+        <h1> <%= @hotel %> </h1>
+      </div>
+    </div>
+  </div>
+
   <% @guests.each do |guest| %>
 
   <div class="guest">
     <div class="beschreibung">
-        <div class="kommen">
-          <span id="orange">Kommen?  </span><span><%= guest.coming %></span>
-        </div>
-        <div class="name">
-          <span id="orange">Name:  </span><span><%=guest.name  %></span>
-        </div>
-        <div class="email">
-          <span id="orange">Email:  </span><span><%=guest.email  %></span>
-        </div>
-        <div class="erwachsene">
-          <span id="orange">Erwachsene:  </span><span><%=guest.adult  %></span>
-        </div>
-        <div class="kinder">
-          <span id="orange">Kinder:  </span><span><%=guest.child  %></span>
-        </div>
-        <div class="hotel">
-          <span id="orange">Zimmer Hotel Wildland:  </span><span><%=guest.hotel  %></span>
-        </div>
-        <div class="kommentar">
-          <span id="orange">Kommentar:  </span><span><%=guest.excuse  %></span>
-        </div>
+      <div class="kommen">
+        <span id="orange">Kommen?  </span><span><%= guest.coming %></span>
+      </div>
+      <div class="name">
+        <span id="orange">Name:  </span><span><%=guest.name  %></span>
+      </div>
+      <div class="email">
+        <span id="orange">Email:  </span><span><%=guest.email  %></span>
+      </div>
+      <div class="erwachsene">
+        <span id="orange">Erwachsene:  </span><span><%=guest.adult  %></span>
+      </div>
+      <div class="kinder">
+        <span id="orange">Kinder:  </span><span><%=guest.child  %></span>
+      </div>
+      <div class="hotel">
+        <span id="orange">Zimmer Hotel Wildland:  </span><span><%=guest.hotel  %></span>
+      </div>
+      <div class="kommentar">
+        <span id="orange">Kommentar:  </span><span><%=guest.excuse  %></span>
+      </div>
     </div>
 
     <div class="guest-actions">
@@ -32,9 +58,7 @@
       method: :delete,
       data: { confirm: "Bist du sicher?" } %>
     </div>
-
-
   </div>
-
-  <% end %></div>
+  <% end %>
+</div>
 

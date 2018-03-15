@@ -1,32 +1,62 @@
 <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+  <div class="overview">
+  <h1 class="text-center">Übersicht Gruppenflittern</h1>
+    <div class="overview-center">
+      <div class="text-center">
+        <p>Zusagen:</p>
+        <h1><%= @zusagen  %></h1>
+      </div>
+      <div class="text-center">
+        <p>Absagen:</p>
+        <h1> <%= @absagen %> </h1>
+      </div>
+      <div class="text-center">
+        <p>Personen:</p>
+        <h1> <%= @personen %></h1>
+      </div>
+      <div class="text-center">
+        <p>Wohnwagen:</p>
+        <h1> <%= @caravan %></h1>
+      </div>
+      <div class="text-center">
+        <p>Zeltplätze:</p>
+        <h1> <%= @tent %> </h1>
+      </div>
+      <div class="text-center">
+        <p>Eigener Wohnwagen:</p>
+        <h1> <%= @ownbus %> </h1>
+      </div>
+
+    </div>
+  </div>
   <% @honeymoons.each do |honeymoon| %>
 
   <div class="guest">
     <div class="beschreibung">
-        <div class="kommen">
-          <span id="orange">Kommen?  </span><span><%= honeymoon.coming %></span>
-        </div>
-        <div class="name">
-          <span id="orange">Name:  </span><span><%=honeymoon.name  %></span>
-        </div>
-        <div class="email">
-          <span id="orange">Email:  </span><span><%=honeymoon.email  %></span>
-        </div>
-        <div class="erwachsene">
-          <span id="orange">Personen:  </span><span><%=honeymoon.additional  %></span>
-        </div>
-        <div class="hotel">
-          <span id="orange">Wohnwagen gewünscht?  </span><span><%=honeymoon.caravan  %></span>
-        </div >
-        <div class="hotel">
-          <span id="orange">Zeltplatz gewünscht?  </span><span><%=honeymoon.tent  %></span>
-        </div>
-        <div class="hotel">
-          <span id="orange">Eigener Bus / Wohnwagen?  </span><span><%=honeymoon.ownbus  %></span>
-        </div>
-        <div class="kommentar">
-          <span id="orange">Kommentar:  </span><span><%=honeymoon.comment  %></span>
-        </div>
+      <div class="kommen">
+        <span id="orange">Kommen?  </span><span><%= honeymoon.coming %></span>
+      </div>
+      <div class="name">
+        <span id="orange">Name:  </span><span><%=honeymoon.name  %></span>
+      </div>
+      <div class="email">
+        <span id="orange">Email:  </span><span><%=honeymoon.email  %></span>
+      </div>
+      <div class="erwachsene">
+        <span id="orange">Personen:  </span><span><%=honeymoon.additional  %></span>
+      </div>
+      <div class="hotel">
+        <span id="orange">Wohnwagen gewünscht?  </span><span><%=honeymoon.caravan  %></span>
+      </div >
+      <div class="hotel">
+        <span id="orange">Zeltplatz gewünscht?  </span><span><%=honeymoon.tent  %></span>
+      </div>
+      <div class="hotel">
+        <span id="orange">Eigener Bus / Wohnwagen?  </span><span><%=honeymoon.ownbus  %></span>
+      </div>
+      <div class="kommentar">
+        <span id="orange">Kommentar:  </span><span><%=honeymoon.comment  %></span>
+      </div>
     </div>
 
     <div class="guest-actions">

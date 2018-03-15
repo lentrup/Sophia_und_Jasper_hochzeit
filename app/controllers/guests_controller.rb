@@ -5,6 +5,11 @@ class GuestsController < ApplicationController
 
   def index
     @guests = Guest.all
+    @adults = Guest.sum(:adult)
+    @children = Guest.sum(:child)
+    @hotel = Guest.where(hotel: true).count
+    @zusagen = Guest.where(coming: true).count
+    @absagen = Guest.where(coming: false).count
   end
 
 
@@ -42,4 +47,6 @@ class GuestsController < ApplicationController
   def guest_params
     params.require(:guest).permit(:name, :email, :coming, :excuse, :adult, :child, :hotel)
   end
+
+
 end
