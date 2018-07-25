@@ -72,6 +72,11 @@ function initMap() {
   var marker = new google.maps.Marker({
     position:{lat:52.67518,lng:9.84277},
     map:map,
+    url: 'https://goo.gl/maps/TbigCM3Qoyp'
+  });
+  google.maps.event.addListener(marker, 'click', function() {
+        //window.location.href = this.url;
+        window.open(this.url)
   });
 }
 
